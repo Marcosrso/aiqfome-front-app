@@ -2,26 +2,36 @@
   --background: #ffffff;
   --foreground: #7B1FA2;
 
-  /* Start colors */
+  /* Start Figma colors */
 
-  --colors-primary-200: #EECFFC;
-  --colors-primary-500: #7B1FA2;
-  --colors-primary-700: #580F78;
+  --purple-200: #EECFFC;
+  --purple-500: #7B1FA2;
+  --purple-700: #580F78;
+  --neutrals-0: #FFFFFF;
+  --neutrals-100: #EEF0F5;
+  --decorative-dividers-gray: #CDD1D9;
+  /* End Figma colors */
 
-  --colors-neutral-100: #FFFFFF;
-  --colors-neutral-100: #EEF0F5;
+  
+  /* Start App colors */
+  --colors-primary-200: var(--purple-200);
+  --colors-primary-500: var(--purple-500);
+  --colors-primary-700: var(--purple-700);
 
-  /* End colors */
+  --colors-neutral-0: var(--neutrals-0);
+  --colors-neutral-100: var(--neutrals-100);
+  --border-colors-gray: var(--decorative-dividers-gray);
+  /* End App colors */
+
 
   /* Start spacings */
-
   --spacing-xxsmall: 4px;
   --spacing-xsmall: 8px;
   --spacing-small: 12px;
   --spacing-medium: 16px;
   --spacing-large: 20px;
   --spacing-xlarge: 24px;
-
+  --spacing-xxlarge: 28px;
   /* End spacings */
 }
 
