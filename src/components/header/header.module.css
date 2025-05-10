@@ -15,14 +15,14 @@
     padding-top: 0;
 }
 
-.address-box {
+.address-wrapper {
     position: relative;
     align-items: center;
     min-width: 254px;
     padding-left: var(--spacing-xlarge);
 }
 
-.address-icon-box {
+.address-icon-container {
     position: absolute;
     left: 0;
     bottom: 50%;
@@ -30,7 +30,7 @@
     line-height: 0;
 }
 
-.address-label-box {
+.address-label-container {
     display: grid;
 }
 

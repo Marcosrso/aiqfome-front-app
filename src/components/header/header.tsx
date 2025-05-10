@@ -16,12 +16,10 @@ export default function Header() {
       <div className={styles["main-container"]}>
         <Logo />
         <AddressButton />
-        <IconButton size="sm">
-          <ProfileIcon />
-        </IconButton>
+        <ProfileButton />
       </div>
       <div className={styles["input-container"]}>
-        <Input.Search placeholder="busque pela loja ou culinária"/>
+        <Input.Search placeholder="busque pela loja ou culinária" />
       </div>
     </header>
   );
@@ -33,11 +31,11 @@ function AddressButton() {
   };
 
   return (
-    <span className={styles["address-box"]}>
-      <span className={styles["address-icon-box"]}>
+    <span className={styles["address-wrapper"]}>
+      <span className={styles["address-icon-container"]}>
         <LocationIcon />
       </span>
-      <span className={styles["address-label-box"]}>
+      <span className={styles["address-label-container"]}>
         <p className={styles["address-label"]}>entregando em</p>
         <Button
           onClick={addressOnClick}
@@ -60,5 +58,13 @@ function Logo() {
         height={32}
       />
     </Link>
+  );
+}
+
+function ProfileButton() {
+  return (
+    <IconButton size="sm">
+      <ProfileIcon />
+    </IconButton>
   );
 }
