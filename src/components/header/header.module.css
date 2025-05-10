@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colors-primary-500);
+    padding: var(--spacing-small);
+    padding-bottom: var(--spacing-xxsmall);
+}
+
+.address-box {
+    position: relative;
+    align-items: center;
+    min-width: 254px;
+    padding-left: var(--spacing-xlarge);
+}
+
+.address-icon-box {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    line-height: 0;
+}
+
+.address-label-box {
+    display: grid;
+}
+
+.address-label {
+    color: var(--colors-primary-200);
+
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: var(--spacing-xsmall);
+}
+
+.address-label-button {
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
