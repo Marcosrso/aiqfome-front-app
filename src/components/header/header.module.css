@@ -1,10 +1,18 @@
-.container {
+.header-wrapper {
+    background-color: var(--colors-primary-500);
+}
+
+.main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--colors-primary-500);
     padding: var(--spacing-small);
     padding-bottom: var(--spacing-xxsmall);
+}
+
+.input-container {
+    padding: var(--spacing-small);
+    padding-top: 0;
 }
 
 .address-box {

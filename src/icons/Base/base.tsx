@@ -8,7 +8,6 @@ export default function ProfileIcon({
   src,
   alt,
   className,
-  style,
   ...rest
 }: BaseIconProps) {
   const baseIconClassName = classNames(className, styles["base-icon-box"]);
@@ -19,9 +18,6 @@ export default function ProfileIcon({
       width={24}
       height={24}
       className={baseIconClassName}
-      style={{
-        ...style,
-      }}
       {...rest}
     />
   );
