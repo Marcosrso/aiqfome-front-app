@@ -4,11 +4,11 @@
 
   /* Start colors */
 
+  --colors-primary-200: #EECFFC;
   --colors-primary-500: #7B1FA2;
   --colors-primary-700: #580F78;
 
-  /* gray scale */
-
+  --colors-neutral-100: #FFFFFF;
   --colors-neutral-100: #EEF0F5;
 
   /* End colors */
