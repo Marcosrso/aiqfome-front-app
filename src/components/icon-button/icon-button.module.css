@@ -1,0 +1,16 @@
+.button-box {
+    height: 32px;
+    width: 32px;
+    padding: var(--spacing-xsmall);
+    
+    background-color: transparent;
+    
+    border-radius: 8px;
+    border: none;
+}
+
+.button-box-sm {
+    padding: var(--spacing-xxsmall);
+    height: 24px;
+    width: 24px;
+}
