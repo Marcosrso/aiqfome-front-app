@@ -1,6 +1,28 @@
 :root {
   --background: #ffffff;
   --foreground: #7B1FA2;
+
+  /* Start colors */
+
+  --colors-primary-500: #7B1FA2;
+  --colors-primary-700: #580F78;
+
+  /* gray scale */
+
+  --colors-neutral-100: #EEF0F5;
+
+  /* End colors */
+
+  /* Start spacings */
+
+  --spacing-xxsmall: 4px;
+  --spacing-xsmall: 8px;
+  --spacing-small: 12px;
+  --spacing-medium: 16px;
+  --spacing-large: 20px;
+  --spacing-xlarge: 24px;
+
+  /* End spacings */
 }
 
 html,
