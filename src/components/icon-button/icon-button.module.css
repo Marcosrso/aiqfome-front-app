@@ -1,6 +1,8 @@
 .button-box {
     height: 32px;
+    min-height: 32px;
     width: 32px;
+    min-width: 32px;
     padding: var(--spacing-xsmall);
     
     background-color: transparent;
@@ -13,5 +15,7 @@
 .button-box-sm {
     padding: var(--spacing-xxsmall);
     height: 24px;
+    min-height: 24px;
     width: 24px;
+    min-width: 24px;
 }
