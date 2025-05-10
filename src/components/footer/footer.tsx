@@ -2,7 +2,7 @@ import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={styles.container}>
+    <footer className={styles.wrapper}>
       <p className={styles["signature-paragraph"]}>
         feito com 💜 em maringá-PR
       </p>

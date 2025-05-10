@@ -1,7 +1,9 @@
 import { ComponentProps } from "react";
-import styles from "./input.module.css";
 import classNames from "classnames";
+
 import SearchIcon from "@/icons/Search";
+
+import styles from "./input.module.css";
 
 type InputProps = ComponentProps<"input">;
 

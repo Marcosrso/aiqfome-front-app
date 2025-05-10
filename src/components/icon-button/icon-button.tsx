@@ -1,6 +1,7 @@
 import { ComponentProps } from "react";
-import styles from "./icon-button.module.css";
 import classNames from "classnames";
+
+import styles from "./icon-button.module.css";
 
 interface IconButtonProps extends ComponentProps<"button"> {
   size?: "sm" | "md";

@@ -1,7 +1,8 @@
 "use client"
 import { ComponentProps } from "react";
-import styles from "./button.module.css";
 import classNames from "classnames";
+
+import styles from "./button.module.css";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface ButtonProps extends ComponentProps<"button"> {}

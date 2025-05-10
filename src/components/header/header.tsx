@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
-import styles from "./header.module.css";
 import IconButton from "../icon-button/icon-button";
 import Button from "../button/button";
+import Input from "../input/input";
 
 import ProfileIcon from "@/icons/Profile";
 import LocationIcon from "@/icons/Location";
-import Input from "../input/input";
+
+import styles from "./header.module.css";
 
 export default function Header() {
   return (
