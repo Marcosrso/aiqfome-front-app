@@ -1,0 +1,51 @@
+.container {
+    padding: var(--spacing-small);
+}
+
+.section-title {
+    color: var(--colors-primary-500);
+}
+
+.store-list {
+    display: grid;
+    gap: var(--spacing-small);
+}
+
+.store-card {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    border-radius: 8px;
+    background-color: var( --colors-neutral-50);
+}
+
+.store-card-box {
+    padding: var(--spacing-xsmall);
+}
+
+.store-card-content {
+    display: flex;
+}
+
+.free-delivery-fee-text {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--colors-success);
+}
+
+.delivery-fee-text {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--colors-primary-500);
+}
+
+.rating-text {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--colors-neutral-500);
+}

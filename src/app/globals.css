@@ -7,8 +7,15 @@
   --purple-200: #EECFFC;
   --purple-500: #7B1FA2;
   --purple-700: #580F78;
+
   --neutrals-0: #FFFFFF;
+  --neutrals-50: #F5F6F9;
   --neutrals-100: #EEF0F5;
+  --neutrals-500: #6D6F73;
+  --neutrals-700: #393A3C;
+  --neutrals-900: #202326;
+  
+  --teal-600: #027A7A;
   --decorative-dividers-gray: #CDD1D9;
   /* End Figma colors */
 
@@ -19,7 +26,13 @@
   --colors-primary-700: var(--purple-700);
 
   --colors-neutral-0: var(--neutrals-0);
+  --colors-neutral-50: var(--neutrals-50);
   --colors-neutral-100: var(--neutrals-100);
+  --colors-neutral-500: var(--neutrals-500);
+  --colors-neutral-700: var(--neutrals-700);
+  --colors-neutral-900: var(--neutrals-900);
+
+  --colors-success: var(--teal-600);
   --border-colors-gray: var(--decorative-dividers-gray);
   /* End App colors */
 
@@ -44,7 +57,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -58,4 +71,18 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h2 {
+  color: var(--colors-neutral-900);
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: var(--spacing-small);
+}
+
+h3 {
+  color: var(--colors-neutral-700);
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: var(--spacing-xxsmall);
 }
