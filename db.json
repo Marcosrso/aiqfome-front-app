@@ -1,0 +1,43 @@
+{
+    "stores": [
+        {
+            "id": 1,
+            "name": "Matsuri concept",
+            "deliveryFee": 0,
+            "rating": 5.0,
+            "brandImg": "/images/matsuri-branding.png",
+            "brandImgAlt": "matsuri",
+            "isOpen": true,
+            "slug": "matsuri-concept"
+        },
+        {
+            "id": 2,
+            "name": "Subway - Avenida center",
+            "deliveryFee": 6,
+            "rating": 5.0,
+            "brandImg": "/images/subway-branding.png",
+            "brandImgAlt": "subway",
+            "isOpen": true,
+            "slug": "subway-avenida-center"
+        },
+        {
+            "id": 3,
+            "name": "Burger King - Colombo",
+            "deliveryFee": 6,
+            "rating": 5.0,
+            "brandImg": "/images/bk-branding.png",
+            "brandImgAlt": "burger king",
+            "isOpen": true,
+            "slug": "burger-king-colombo"
+        },        {
+            "id": 4,
+            "name": "Burger King - Novo Centro",
+            "deliveryFee": 6,
+            "rating": 5.0,
+            "brandImg": "/images/bk-branding.png",
+            "brandImgAlt": "burger king",
+            "isOpen": false,
+            "slug": "burger-king-novo-centro"
+        }
+    ]
+}
