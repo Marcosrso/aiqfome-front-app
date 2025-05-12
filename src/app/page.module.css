@@ -32,6 +32,7 @@
     font-weight: 700;
     font-size: 14px;
     color: var(--colors-success);
+    line-height: 0;
 }
 
 .delivery-fee-text {
@@ -40,6 +41,7 @@
     font-weight: 700;
     font-size: 14px;
     color: var(--colors-primary-500);
+    line-height: 0;
 }
 
 .rating-text {
@@ -48,4 +50,5 @@
     font-weight: 700;
     font-size: 14px;
     color: var(--colors-neutral-500);
+    line-height: 0;
 }

@@ -43,10 +43,16 @@
 }
 
 .address-label-button {
+    display: flex;
+    align-items: center;
     text-align: left;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
 
     text-overflow: ellipsis;
+}
+
+.address-label-button svg g path {
+    fill: var(--colors-neutral-0);
 }

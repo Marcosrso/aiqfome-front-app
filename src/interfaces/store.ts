@@ -7,4 +7,5 @@ export interface Store {
   brandImgAlt: string;
   isOpen: boolean;
   slug: string;
+  moreInfoUrl: string;
 }

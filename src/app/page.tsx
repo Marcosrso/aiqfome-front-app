@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Store } from "@/interfaces/store";
 
 export default async function Home() {
-  const stores: Store[] = await fetch(`http://localhost:3001/stores`).then(
+  const stores: Store[] = await fetch(`${process.env.API_URL}/stores`).then(
     (res) => res.json()
   );
 

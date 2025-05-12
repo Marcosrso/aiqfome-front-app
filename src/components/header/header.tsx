@@ -9,6 +9,7 @@ import ProfileIcon from "@/icons/Profile";
 import LocationIcon from "@/icons/Location";
 
 import styles from "./header.module.css";
+import ArrowRightIcon from "@/icons/ArrowRight";
 
 export default function Header() {
   return (
@@ -41,7 +42,7 @@ function AddressButton() {
           onClick={addressOnClick}
           className={styles["address-label-button"]}
         >
-          Rua Mandaguari, 198 {">"}
+          Rua Mandaguari, 198 <ArrowRightIcon width={16} height={16} />
         </Button>
       </span>
     </span>
@@ -63,7 +64,7 @@ function Logo() {
 
 function ProfileButton() {
   return (
-    <IconButton size="sm">
+    <IconButton size="sm" aria-label="Meu perfil">
       <ProfileIcon />
     </IconButton>
   );
