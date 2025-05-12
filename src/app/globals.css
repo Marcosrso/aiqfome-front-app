@@ -15,7 +15,12 @@
   --neutrals-700: #393A3C;
   --neutrals-900: #202326;
   
+  --teal-50: #F2FAFA;
   --teal-600: #027A7A;
+  --teal-400: #00A296;
+
+  --green-500: #02A117;
+
   --decorative-dividers-gray: #CDD1D9;
   /* End Figma colors */
 
@@ -32,7 +37,10 @@
   --colors-neutral-700: var(--neutrals-700);
   --colors-neutral-900: var(--neutrals-900);
 
+  --colors-success-dark: var(--green-500);
   --colors-success: var(--teal-600);
+  --colors-success-light: var(--teal-400);
+  --colors-success-extralight: var(--teal-50);
   --border-colors-gray: var(--decorative-dividers-gray);
   /* End App colors */
 

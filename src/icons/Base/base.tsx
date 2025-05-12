@@ -1,24 +1,23 @@
-import Image, { ImageProps } from "next/image";
+import { ReactElement } from "react";
 import styles from "./base.module.css";
 import classNames from "classnames";
+import { cloneElement, ComponentProps } from "react";
 
-export type BaseIconProps = ImageProps;
+export interface BaseIconProps extends ComponentProps<"svg"> {
+  children: ReactElement;
+}
 
-export default function ProfileIcon({
-  src,
-  alt,
+export default function BaseIcon({
   className,
+  children,
   ...rest
 }: BaseIconProps) {
   const baseIconClassName = classNames(className, styles["base-icon-box"]);
   return (
-    <Image
-      src={src}
-      alt={alt}
-      width={24}
-      height={24}
-      className={baseIconClassName}
-      {...rest}
-    />
+    <div className={baseIconClassName} aria-hidden="true">
+      {cloneElement(children, {
+        ...rest,
+      })}
+    </div>
   );
 }
