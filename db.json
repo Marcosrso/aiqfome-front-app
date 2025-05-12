@@ -8,6 +8,7 @@
             "brandImg": "/images/matsuri-branding.png",
             "brandImgAlt": "matsuri",
             "isOpen": true,
+            "moreInfoUrl": "loja/matsuri-concept",
             "slug": "matsuri-concept"
         },
         {
@@ -18,6 +19,7 @@
             "brandImg": "/images/subway-branding.png",
             "brandImgAlt": "subway",
             "isOpen": true,
+            "moreInfoUrl": "loja/subway-avenida-center",
             "slug": "subway-avenida-center"
         },
         {
@@ -28,6 +30,7 @@
             "brandImg": "/images/bk-branding.png",
             "brandImgAlt": "burger king",
             "isOpen": true,
+            "moreInfoUrl": "loja/burger-king-colombo",
             "slug": "burger-king-colombo"
         },        {
             "id": 4,
@@ -37,7 +40,250 @@
             "brandImg": "/images/bk-branding.png",
             "brandImgAlt": "burger king",
             "isOpen": false,
+            "moreInfoUrl": "loja/burger-king-novo-centro",
             "slug": "burger-king-novo-centro"
         }
+    ],
+    "stores-details": [
+        {
+            "id": 1,
+            "name": "Matsuri concept",
+            "delivery": {
+                "fee": 0,
+                "minOrderValueForFree": 0,
+                "distance": "5.2km",
+                "deliveryDay": "hoje",
+                "estimatedDeliveryTime": "30-40 min"
+            },
+            "openingHours": {
+                "Monday": "08h - 12h",
+                "Tuesday": "08h - 12h",
+                "Wednesday": "08h - 12h",
+                "Thursday": "08h - 12h",
+                "Friday": "08h - 12h",
+                "Saturday": "08h - 12h",
+                "Sunday": "08h - 12h"
+            },
+            "sections": [
+                {
+                    "name": "Niguiris",
+                    "description": "sushi em forma de cone com salmão e cream cheese",
+                    "description": "sushi em forma de cone com salmão e cream cheese",
+                    "products": [
+                        {
+                            "name": "Salmão",
+                            "type": "UNIT",
+                            "description": "Salmão fresco",
+                            "value": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Temakis",
+                    "description": "temakis",
+                    "products": [
+                        {
+                            "name": "Califórnia",
+                            "type": "UNIT",
+                            "description": "Kani, pepino e maçã ou manga",
+                            "promotionalValue": 13.99,
+                            "value": 17.00
+                        },
+                         {
+                            "name": "Mix",
+                            "type": "COMB",
+                            "description": "Escolha 2 ingredientes: shimeki, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese.",
+                            "value": 13.99
+                        }
+                    ]
+                }
+            ],
+            "minimumOrderValue": 0,
+            "rating": 5.0,
+            "brandImg": "/images/matsuri-branding.png",
+            "brandImgAlt": "matsuri",
+            "isOpen": true,
+            "moreInfoUrl": "loja/matsuri-concept",
+            "slug": "matsuri-concept"
+        },
+        {
+            "id": 2,
+            "name": "Subway - Avenida center",
+            "delivery": {
+                "fee": 0,
+                "minOrderValueForFree": 0,
+                "distance": "5.2km",
+                "deliveryDay": "hoje",
+                "estimatedDeliveryTime": "30-40 min"
+            },
+            "openingHours": {
+                "Monday": "08h - 12h",
+                "Tuesday": "08h - 12h",
+                "Wednesday": "08h - 12h",
+                "Thursday": "08h - 12h",
+                "Friday": "08h - 12h",
+                "Saturday": "08h - 12h",
+                "Sunday": "08h - 12h"
+            },
+            "sections": [
+                {
+                    "name": "Niguiris",
+                    "description": "sushi em forma de cone com salmão e cream cheese",
+                    "products": [
+                        {
+                            "name": "Salmão",
+                            "type": "UNIT",
+                            "description": "Salmão fresco",
+                            "value": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Temakis",
+                    "description": "temakis",
+                    "products": [
+                        {
+                            "name": "Califórnia",
+                            "type": "UNIT",
+                            "description": "Kani, pepino e maçã ou manga",
+                            "promotionalValue": 0,
+                            "value": 13.99
+                        },
+                         {
+                            "name": "Mix",
+                            "type": "COMB",
+                            "description": "Escolha 2 ingredientes: shimeki, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese.",
+                            "value": 13.99
+                        }
+                    ]
+                }
+            ],
+            "minimumOrderValue": 0,
+            "rating": 5.0,
+            "brandImg": "/images/subway-branding.png",
+            "brandImgAlt": "subway",
+            "isOpen": true,
+            "moreInfoUrl": "loja/subway-avenida-center",
+            "slug": "subway-avenida-center"
+        },
+        {
+            "id": 3,
+            "name": "Burger King - Colombo",
+            "delivery": {
+                "fee": 0,
+                "minOrderValueForFree": 0,
+                "distance": "5.2km",
+                "deliveryDay": "hoje",
+                "estimatedDeliveryTime": "30-40 min"
+            },
+            "openingHours": {
+                "Monday": "08h - 12h",
+                "Tuesday": "08h - 12h",
+                "Wednesday": "08h - 12h",
+                "Thursday": "08h - 12h",
+                "Friday": "08h - 12h",
+                "Saturday": "08h - 12h",
+                "Sunday": "08h - 12h"
+            },
+            "sections": [
+                {
+                    "name": "Niguiris",
+                    "description": "sushi em forma de cone com salmão e cream cheese",
+                    "products": [
+                        {
+                            "name": "Salmão",
+                            "type": "UNIT",
+                            "description": "Salmão fresco",
+                            "value": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Temakis",
+                    "description": "temakis",
+                    "products": [
+                        {
+                            "name": "Califórnia",
+                            "type": "UNIT",
+                            "description": "Kani, pepino e maçã ou manga",
+                            "promotionalValue": 0,
+                            "value": 13.99
+                        },
+                         {
+                            "name": "Mix",
+                            "type": "COMB",
+                            "description": "Escolha 2 ingredientes: shimeki, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese.",
+                            "value": 13.99
+                        }
+                    ]
+                }
+            ],
+            "minimumOrderValue": 0,
+            "rating": 5.0,
+            "brandImg": "/images/bk-branding.png",
+            "brandImgAlt": "burger king",
+            "isOpen": true,
+            "moreInfoUrl": "loja/burger-king-colombo",
+            "slug": "burger-king-colombo"
+        },        {
+            "id": 4,
+            "name": "Burger King - Novo Centro",
+            "delivery": {
+                "fee": 0,
+                "minOrderValueForFree": 0,
+                "distance": "5.2km",
+                "deliveryDay": "hoje",
+                "estimatedDeliveryTime": "30-40 min"
+            },
+            "openingHours": {
+                "Monday": "08h - 12h",
+                "Tuesday": "08h - 12h",
+                "Wednesday": "08h - 12h",
+                "Thursday": "08h - 12h",
+                "Friday": "08h - 12h",
+                "Saturday": "08h - 12h",
+                "Sunday": "08h - 12h"
+            },
+            "sections": [
+                {
+                    "name": "Niguiris",
+                    "description": "sushi em forma de cone com salmão e cream cheese",
+                    "products": [
+                        {
+                            "name": "Salmão",
+                            "type": "UNIT",
+                            "description": "Salmão fresco",
+                            "value": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Temakis",
+                    "description": "temakis",
+                    "products": [
+                        {
+                            "name": "Califórnia",
+                            "type": "UNIT",
+                            "description": "Kani, pepino e maçã ou manga",
+                            "promotionalValue": 13.99,
+                            "value": 17.00
+                        },
+                         {
+                            "name": "Mix",
+                            "type": "COMB",
+                            "description": "Escolha 2 ingredientes: shimeki, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese.",
+                            "value": 13.99
+                        }
+                    ]
+                }
+            ],
+            "minimumOrderValue": 0,
+            "rating": 5.0,
+            "brandImg": "/images/bk-branding.png",
+            "brandImgAlt": "burger king",
+            "isOpen": false,
+            "moreInfoUrl": "loja/burger-king-novo-centro",
+            "slug": "burger-king-novo-centro"
+        }  
     ]
 }
