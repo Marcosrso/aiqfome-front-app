@@ -35,6 +35,7 @@ export interface StoreDetailsSection {
 
 export interface StoreDetailsProduct {
   name: string;
+  slug: string;
   type: "UNIT" | "COMB";
   description: string;
   promotionalValue: number;

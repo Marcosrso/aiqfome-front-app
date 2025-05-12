@@ -68,10 +68,10 @@
                 {
                     "name": "Niguiris",
                     "description": "sushi em forma de cone com salmão e cream cheese",
-                    "description": "sushi em forma de cone com salmão e cream cheese",
                     "products": [
                         {
                             "name": "Salmão",
+                            "slug": "niguiris-salmao",
                             "type": "UNIT",
                             "description": "Salmão fresco",
                             "value": 10
@@ -84,6 +84,7 @@
                     "products": [
                         {
                             "name": "Califórnia",
+                            "slug": "temakis-california",
                             "type": "UNIT",
                             "description": "Kani, pepino e maçã ou manga",
                             "promotionalValue": 13.99,
@@ -91,6 +92,7 @@
                         },
                          {
                             "name": "Mix",
+                            "slug": "temakis-mix",
                             "type": "COMB",
                             "description": "Escolha 2 ingredientes: shimeki, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese.",
                             "value": 13.99
@@ -132,6 +134,7 @@
                     "products": [
                         {
                             "name": "Salmão",
+                             "slug": "niguiris-salmao",
                             "type": "UNIT",
                             "description": "Salmão fresco",
                             "value": 10
@@ -144,6 +147,7 @@
                     "products": [
                         {
                             "name": "Califórnia",
+                            "slug": "temakis-california",
                             "type": "UNIT",
                             "description": "Kani, pepino e maçã ou manga",
                             "promotionalValue": 0,
@@ -151,6 +155,7 @@
                         },
                          {
                             "name": "Mix",
+                            "slug": "temakis-mix",
                             "type": "COMB",
                             "description": "Escolha 2 ingredientes: shimeki, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese.",
                             "value": 13.99
@@ -192,6 +197,7 @@
                     "products": [
                         {
                             "name": "Salmão",
+                             "slug": "niguiris-salmao",
                             "type": "UNIT",
                             "description": "Salmão fresco",
                             "value": 10
@@ -204,6 +210,7 @@
                     "products": [
                         {
                             "name": "Califórnia",
+                            "slug": "temakis-california",
                             "type": "UNIT",
                             "description": "Kani, pepino e maçã ou manga",
                             "promotionalValue": 0,
@@ -211,6 +218,7 @@
                         },
                          {
                             "name": "Mix",
+                            "slug": "temakis-mix",
                             "type": "COMB",
                             "description": "Escolha 2 ingredientes: shimeki, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese.",
                             "value": 13.99
@@ -251,6 +259,7 @@
                     "products": [
                         {
                             "name": "Salmão",
+                             "slug": "niguiris-salmao",
                             "type": "UNIT",
                             "description": "Salmão fresco",
                             "value": 10
@@ -263,6 +272,7 @@
                     "products": [
                         {
                             "name": "Califórnia",
+                            "slug": "temakis-california",
                             "type": "UNIT",
                             "description": "Kani, pepino e maçã ou manga",
                             "promotionalValue": 13.99,
@@ -270,6 +280,7 @@
                         },
                          {
                             "name": "Mix",
+                            "slug": "temakis-mix",
                             "type": "COMB",
                             "description": "Escolha 2 ingredientes: shimeki, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese.",
                             "value": 13.99

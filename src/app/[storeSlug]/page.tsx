@@ -21,12 +21,12 @@ import StarIcon from "@/icons/Star";
 import CurrencyIcon from "@/icons/Currency";
 
 interface StoreProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ storeSlug: string }>;
 }
 
 export default async function Store({ params }: StoreProps) {
-  const { slug } = await params;
-  const store = await getStoreBySlug(slug);
+  const { storeSlug } = await params;
+  const store = await getStoreBySlug(storeSlug);
 
   if (!store) {
     return <div>Loja não encontrada!</div>;
@@ -56,10 +56,17 @@ export default async function Store({ params }: StoreProps) {
       </section>
       <section className={styles["products-section"]}>
         {store.sections.map((section) => (
-          <Accordion key={section.name} title={section.name} subTitle={section.description}>
+          <Accordion
+            key={section.name}
+            title={section.name}
+            subTitle={section.description}
+          >
             <ul>
               {section.products.map((product) => (
-                <ProductItem key={product.name} {...product} />
+                <ProductItem
+                  key={product.name}
+                  {...{ ...product, slug: `${storeSlug}/produto/${product.slug}` }}
+                />
               ))}
             </ul>
           </Accordion>
@@ -159,39 +166,48 @@ function ProductItem({
   promotionalValue,
   value,
   type,
+  slug,
 }: StoreDetailsProduct) {
   return (
     <li key={name} className={styles["product-item-box"]}>
-      <div>
-        <div className={styles["product-item-title"]}>{name}</div>
-        <div className={styles["product-item-description"]}>{description}</div>
-      </div>
-
-      <div className={styles["product-item-value-box"]}>
-        {promotionalValue > 0 && (
-          <div className={styles["product-item-old-value"]}>
-            {parseCurrency(value)}
+      <Link
+        href={slug}
+        title="Selecionar produto"
+        className={styles["product-item-box-link"]}
+      >
+        <div>
+          <div className={styles["product-item-title"]}>{name}</div>
+          <div className={styles["product-item-description"]}>
+            {description}
           </div>
-        )}
-
-        {type === "COMB" && (
-          <span className={styles["product-item-value-combo-text"]}>
-            a partir de
-          </span>
-        )}
-
-        <div
-          className={
-            promotionalValue > 0
-              ? styles["product-item-promo-value"]
-              : styles["product-item-value"]
-          }
-        >
-          {promotionalValue > 0 && <CurrencyIcon width={16} height={16}/>}
-          &nbsp;
-          {parseCurrency(promotionalValue || value)}
         </div>
-      </div>
+
+        <div className={styles["product-item-value-box"]}>
+          {promotionalValue > 0 && (
+            <div className={styles["product-item-old-value"]}>
+              {parseCurrency(value)}
+            </div>
+          )}
+
+          {type === "COMB" && (
+            <span className={styles["product-item-value-combo-text"]}>
+              a partir de
+            </span>
+          )}
+
+          <div
+            className={
+              promotionalValue > 0
+                ? styles["product-item-promo-value"]
+                : styles["product-item-value"]
+            }
+          >
+            {promotionalValue > 0 && <CurrencyIcon width={16} height={16} />}
+            &nbsp;
+            {parseCurrency(promotionalValue || value)}
+          </div>
+        </div>
+      </Link>
     </li>
   );
 }
@@ -202,12 +218,4 @@ async function getStoreBySlug(slug: string) {
   ).then((res) => res.json());
 
   return stores.find((store) => store.slug === slug);
-}
-
-export async function generateStaticParams() {
-  const stores: Store[] = await fetch(`${process.env.API_URL}/stores`).then(
-    (res) => res.json()
-  );
-
-  return stores.map((store) => ({ slug: store.slug }));
 }
