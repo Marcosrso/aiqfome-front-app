@@ -296,5 +296,15 @@
             "moreInfoUrl": "loja/burger-king-novo-centro",
             "slug": "burger-king-novo-centro"
         }  
-    ]
+    ],
+    "user": {
+        "name": "Marcos Vinicius",
+        "address": {
+            "street": "Rua Mandaguari",
+            "number": 198,
+            "city": "Remanso",
+            "state": "BA",
+            "zip": "47200-000"
+        }
+    }
 }
