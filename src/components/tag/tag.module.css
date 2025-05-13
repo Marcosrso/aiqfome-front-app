@@ -1,0 +1,17 @@
+.tag {
+    padding: var(--spacing-xxsmall) var(--spacing-xsmall);
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.tag-info {
+    background-color: var(--colors-neutral-700);
+    color: var(--colors-neutral-0);
+}
+
+.tag-success {
+    background-color: var(--colors-success-extralight);
+    color: var(--colors-success);
+}
