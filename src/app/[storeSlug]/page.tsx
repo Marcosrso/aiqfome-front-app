@@ -19,6 +19,7 @@ import BikeIcon from "@/icons/Bike";
 import parseCurrency from "@/utils/currency";
 import StarIcon from "@/icons/Star";
 import CurrencyIcon from "@/icons/Currency";
+import { api } from "@/services/api";
 
 interface StoreProps {
   params: Promise<{ storeSlug: string }>;
@@ -65,7 +66,10 @@ export default async function Store({ params }: StoreProps) {
               {section.products.map((product) => (
                 <ProductItem
                   key={product.name}
-                  {...{ ...product, slug: `${storeSlug}/produto/${product.slug}` }}
+                  {...{
+                    ...product,
+                    slug: `${storeSlug}/produto/${product.slug}`,
+                  }}
                 />
               ))}
             </ul>
@@ -213,9 +217,7 @@ function ProductItem({
 }
 
 async function getStoreBySlug(slug: string) {
-  const stores: StoreDetails[] = await fetch(
-    `${process.env.API_URL}/stores-details`
-  ).then((res) => res.json());
+  const stores: StoreDetails[] = await api(`stores-details`);
 
   return stores.find((store) => store.slug === slug);
 }

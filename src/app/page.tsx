@@ -7,11 +7,10 @@ import parseCurrency from "@/utils/currency";
 import BikeIcon from "@/icons/Bike";
 import Link from "next/link";
 import { Store } from "@/interfaces/store";
+import { api } from "@/services/api";
 
 export default async function Home() {
-  const stores: Store[] = await fetch(`${process.env.API_URL}/stores`).then(
-    (res) => res.json()
-  );
+  const stores: Store[] = await api(`stores`);
 
   return (
     <>
