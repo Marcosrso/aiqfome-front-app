@@ -134,7 +134,7 @@
                     "products": [
                         {
                             "name": "Salmão",
-                             "slug": "niguiris-salmao",
+                            "slug": "niguiris-salmao",
                             "type": "UNIT",
                             "description": "Salmão fresco",
                             "value": 10
@@ -233,7 +233,8 @@
             "isOpen": true,
             "moreInfoUrl": "loja/burger-king-colombo",
             "slug": "burger-king-colombo"
-        },        {
+        },
+        {
             "id": 4,
             "name": "Burger King - Novo Centro",
             "delivery": {
@@ -306,5 +307,81 @@
             "state": "BA",
             "zip": "47200-000"
         }
-    }
+    },
+    "product": [{
+        "slug": "ceviche-de-salmao",
+        "name": "Ceviche de salmão",
+        "type": "COMB",
+        "description": "Salmão temperado com limão, cebola e pimenta",
+        "value": 19.9,
+        "img": "/images/ceviche.png",
+        "altImg": "cevice",
+        "options": [
+            {
+                "id": "tamanho",
+                "title": "qual o tamanho?",
+                "type": "single",
+                "required": true,
+                "choices": [
+                    { "label": "médio", "value": 0 },
+                    { "label": "grande", "value": 3.0 }
+                ]
+            },
+            {
+                "id": "acompanhamentos",
+                "title": "acompanhamentos",
+                "type": "multi",
+                "required": false,
+                "min": 0,
+                "max": 2,
+                "choices": [
+                    { "label": "shoyu", "value": 0 },
+                    { "label": "gengibre", "value": 0 },
+                    { "label": "wasabi", "value": 0 },
+                    { "label": "sem acompanhamentos", "value": 0 }
+                ]
+            },
+            {
+                "id": "bebida",
+                "title": "vai querer bebida?",
+                "type": "integer",
+                "required": false,
+                "choices": [
+                    { "label": "coca-cola", "value": 5.0 },
+                    { "label": "fanta laranja", "value": 5.0 },
+                    { "label": "guaraná antarctica", "value": 5.0 },
+                    { "label": "suco prata laranja", "value": 8.0 },
+                    { "label": "água sem gás", "value": 3.0 }
+                ]
+            },
+            {
+                "id": "talher",
+                "title": "precisa de talher?",
+                "type": "single",
+                "required": false,
+                "choices": [
+                    { "label": "hashi", "value": 1.0 },
+                    { "label": "garfo e faca descartável", "value": 1.0 }
+                ]
+            },
+            {
+                "id": "extras",
+                "title": "mais alguma coisa?",
+                "type": "multi",
+                "required": false,
+                "choices": [
+                    { "label": "biscoito da sorte", "value": 2.0 },
+                    { "label": "rolinho primavera", "value": 4.0 },
+                    { "label": "guioza", "value": 5.0 }
+                ]
+            },
+            {
+                "id": "obs",
+                "title": "alguma observação do item?",
+                "type": "text",
+                "required": false,
+                "placeholder": "ex: tirar algum ingrediente, ponto do prato"
+            }
+        ]
+    }]
 }
