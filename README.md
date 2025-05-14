@@ -2,17 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, run `npm install` to install the project dependencies
 
-```bash
-npm run dev
-```
+Next, run `npm run server` to start the database server
 
-then run the mock data server
-
-```bash
-npm run server
-```
+Finally, in a different terminal, run `npm run dev` to start the development server
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

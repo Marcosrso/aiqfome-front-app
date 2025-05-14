@@ -218,7 +218,7 @@ function ProductItem({
 }
 
 async function getStoreBySlug(slug: string) {
-  const stores: StoreDetails[] = await api(`stores-details`);
+  const stores: StoreDetails[] = await api<StoreDetails[]>(`stores-details`);
 
   return stores.find((store) => store.slug === slug);
 }
