@@ -6,7 +6,7 @@ export interface ProductOptionChoice {
 export interface ProductOption {
   id: string;
   title: string;
-  type: "single" | "multi" | "text";
+  type: "single" | "multi" | "text" | "integer";
   required?: boolean;
   choices?: ProductOptionChoice[];
   placeholder?: string;
