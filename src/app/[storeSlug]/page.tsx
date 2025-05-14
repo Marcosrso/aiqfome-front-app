@@ -1,7 +1,7 @@
 import type { Store } from "@/interfaces/store";
 import Image from "next/image";
 import Link from "next/link";
-import IconButton from "@/components/icon-button/icon-button";
+import IconButton from "@/components/button-icon/button-icon";
 
 import ShareIcon from "@/icons/Share";
 import LikeIcon from "@/icons/Like";
@@ -20,6 +20,7 @@ import parseCurrency from "@/utils/currency";
 import StarIcon from "@/icons/Star";
 import CurrencyIcon from "@/icons/Currency";
 import { api } from "@/services/api";
+import { Tag } from "@/components/tag/tag";
 
 interface StoreProps {
   params: Promise<{ storeSlug: string }>;
@@ -137,10 +138,10 @@ function StoreDetails({
       </div>
 
       <div className={styles["delivery-details-row"]}>
-        <div className={styles["free-delivery-tag"]}>
+        <Tag type="success">
           entrega grátis acima de &nbsp;
           {parseCurrency(delivery.minOrderValueForFree)}
-        </div>
+        </Tag>
       </div>
 
       <div className={styles["delivery-details-row"]}>

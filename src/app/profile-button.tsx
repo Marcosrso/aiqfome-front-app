@@ -1,5 +1,5 @@
 import ProfileIcon from "@/icons/Profile";
-import IconButton from "../icon-button/icon-button";
+import IconButton from "@/components/button-icon/button-icon";
 
 export default function ProfileButton() {
   return (

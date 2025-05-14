@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
+import Header from "@/app/header";
+import Footer from "@/app/footer";
 
 import { api } from "@/services/api";
 

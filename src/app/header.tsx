@@ -1,5 +1,5 @@
 "use client";
-import Input from "../input/input";
+import Input from "../components/input/input";
 
 import styles from "./header.module.css";
 import AddressButton from "./address-button";

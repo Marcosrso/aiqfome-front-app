@@ -1,11 +1,11 @@
 "use client";
 import LocationIcon from "@/icons/Location";
-import Button from "../button/button";
+import Button from "../components/button/button";
+import Skeleton from "@/components/skeleton/skeleton";
 import ArrowRightIcon from "@/icons/ArrowRight";
 
 import styles from "./header.module.css";
 import { useUserStore } from "@/stores/userStore";
-import Skeleton from "../skeleton/skeleton";
 
 export default function AddressButton() {
   const user = useUserStore((state) => state.user);

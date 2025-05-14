@@ -1,0 +1,28 @@
+.container {
+    padding: var(--spacing-small);
+}
+
+.sub-item {
+    padding-left: var(--spacing-small);
+}
+
+.item-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-cta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--colors-success);
+    font-weight: 700;
+}
+
+.item-cta a {
+    margin-right: var(--spacing-small);
+}
+
+.item-list {
+    color: var(--colors-neutral-500);
+}

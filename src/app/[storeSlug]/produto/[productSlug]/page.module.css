@@ -1,0 +1,42 @@
+.banner {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.container {
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+    color: var(--colors-neutral-500);
+}
+
+.section-box {
+    margin-top: var(--spacing-large);
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-item-text-button {
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-size: 14px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-value {
+    color: var(--colors-primary-500);
+    font-weight: 700;
+}
+
+.error-message {
+    display: block;
+    color: var(--colors-primary-500);
+    font-size: 12px;
+    padding: var(--spacing-xxsmall) 0;
+}

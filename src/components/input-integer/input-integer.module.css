@@ -1,0 +1,34 @@
+.quantityWrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.quantityButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px !important;
+  height: 32px !important;
+  padding: var(---spacing-small);
+}
+
+.quantityButton:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.quantityButton:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.quantityArea {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border: none;
+  border-radius: 8;
+  padding: var(---spacing-xxsmall);
+  font-size: 16px;
+}
