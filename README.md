@@ -6,31 +6,24 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+
+then run the mock data server
+
+```bash
+npm run server
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Concepts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- The src/app/user-hydration component injects user data into the global client state at the root of the application. However, this data does not require the pages to be entirely client-side. The server component structure of the pages is partially preserved, ensuring application performance. This implementation aims to make it easier to retrieve data from the client to be sent in the ticket.
 
-## Learn More
+- Design system concepts applied to the components in the src/components folder, that is, they are application agnostic components and can be used in different contexts
 
-To learn more about Next.js, take a look at the following resources:
+- Each store on the website has a static page generated, ensuring better loading performance.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- The Material UI and AntDesign styling libraries are not used as they compromise the application's performance, especially when it comes to the use of Server Components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Native CSS styling was preferably used to ensure less coupling to a library, as it has greater CSS control and is ultimately independent of third-party libs, which ensures greater flexibility in improving performance.
