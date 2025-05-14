@@ -1,12 +1,33 @@
 .button-box {
     font-size: 16px;
     border: none;
-
-    background-color: transparent;
-    color: var(--colors-neutral-100);
     padding: var(--spacing-xsmall);
     font-weight: 700;
     font-size: 16px;
     width: fit-content;
     cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-box:disabled {
+    cursor: not-allowed;
+}
+
+.button-transparent { 
+    background-color: transparent;
+    color: var(--colors-neutral-100);
+}
+
+.button-dark { 
+    background-color: var(--colors-neutral-500);
+    color: var(--colors-neutral-0);
+}
+
+.button-primary { 
+    background-color: var(--colors-primary-500);
+    color: var(--colors-neutral-0);
+}
+
+.fullWidth {
+    width: 100%;
 }
